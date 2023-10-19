@@ -4,10 +4,11 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("../image/clouds.jpg"); background-position: center center; background-repeat: no-repeat;background-attachment: fixed; background-size: cover;
   
-background-color: white;
+background-color: black;
   }
   
   ul.topnav {
@@ -15,14 +16,14 @@ background-color: white;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0E3B43;
+    background-color: white;
   }
   
   ul.topnav li {float: left;}
   
   ul.topnav li a {
     display: block;
-    color: white;
+    color: #0e3b43;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -37,14 +38,18 @@ background-color: white;
   ul.topnav li.right {
     float: right;
 }
-  
-
+/*this makes the image aligns with the center of the content box by default.*/
+.airport {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
 
   @media screen and (max-width: 600px) {
     ul.topnav li.right, 
     ul.topnav li {float: none;
     }
-    
+
   /*/*  smaller img to improve page load speed on mobile internet connections **/
   body{
     background-image: url("../image/clouds-mobile.jpg")
