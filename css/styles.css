@@ -7,10 +7,17 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("../image/clouds.jpg"); background-position: center center; background-repeat: no-repeat;background-attachment: fixed; background-size: cover;
-  
-background-color: black;
+    background-color: black;
   }
-  
+  .logo-combo{
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    display: block;
+    margin-right: 1rem;
+    width: 100px;
+  }
   ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -38,18 +45,40 @@ background-color: black;
   ul.topnav li.right {
     float: right;
 }
+main{
+  margin: 0;
+  padding: 2rem;
+}
 /*this makes the image aligns with the center of the content box by default.*/
 .airport {
+  shape-outside: url(/image/airport.jpg) inset(10px 10px 10px );
   width: 50%;
   height: 50%;
+  padding: .3rem;
+  float: left;
   object-fit: cover;
+  shape-outside: inset(5px 5px 5px 5px);
 }
-.response {
-  padding: 10%;
+p{
+  font-size: 18pt;
+  color: #000;
+  font-weight: bold;
 }
 .tickets {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+}
+grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr ));
+  grid-gap: 20px;
+  padding-top: 2rem;
+  align-items: stretch;
+  }
+.grid img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px  rgba(0,0,0,0.3);
   max-width: 100%;
 }
   @media screen and (max-width: 600px) {
@@ -61,4 +90,7 @@ background-color: black;
   body{
     background-image: url("../image/clouds-mobile.jpg")
   }
+  }
+  p{
+    font-size: 10pt;
   }
