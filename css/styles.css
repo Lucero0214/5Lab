@@ -44,7 +44,14 @@ background-color: black;
   height: 50%;
   object-fit: cover;
 }
-
+.response {
+  padding: 10%;
+}
+.tickets {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
   @media screen and (max-width: 600px) {
     ul.topnav li.right, 
     ul.topnav li {float: none;
