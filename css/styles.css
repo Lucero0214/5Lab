@@ -54,7 +54,6 @@ main{
   shape-outside: url(/image/airport.jpg) inset(10px 10px 10px );
   width: 50%;
   height: 50%;
-  padding: .3rem;
   float: left;
   object-fit: cover;
   shape-outside: inset(5px 5px 5px 5px);
@@ -71,8 +70,8 @@ p{
 }
 grid { 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr ));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr ));
+  grid-gap: 10px;
   padding-top: 2rem;
   align-items: stretch;
   }
@@ -93,4 +92,16 @@ grid {
   }
   p{
     font-size: 10pt;
+  }
+  grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr ));
+    grid-gap: 10px;
+    padding-top: 2rem;
+    align-items: stretch;
+    }
+  .grid img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px  rgba(0,0,0,0.3);
+    max-width: 100%;
   }
