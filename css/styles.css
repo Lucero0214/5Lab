@@ -37,10 +37,10 @@ body {
   }
   
   ul.topnav li a:hover:not(.active) {
-    background-color: #A3BBAD;
+    background-color: skyblue;
 }
   ul.topnav li a.active {
-    background-color: #A3BBAD
+    background-color: skyblue;
 }
   ul.topnav li.right {
     float: right;
@@ -56,7 +56,7 @@ main{
   height: 50%;
   float: left;
   object-fit: cover;
-  shape-outside: inset(5px 5px 5px 5px);
+  padding: .5rem;
 }
 p{
   font-size: 18pt;
