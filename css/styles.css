@@ -50,6 +50,9 @@ main{
   padding: 2rem;
 }
 /*this makes the image aligns with the center of the content box by default.*/
+.wrapper {
+  display: inline-block;
+}
 .airport {
   shape-outside: url(/image/airport.jpg) inset(10px 10px 10px );
   width: 50%;
@@ -63,45 +66,36 @@ p{
   color: #000;
   font-weight: bold;
 }
-.tickets {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-}
-grid { 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr ));
-  grid-gap: 10px;
-  padding-top: 2rem;
-  align-items: stretch;
+
+.vacation-container {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
   }
-.grid img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px  rgba(0,0,0,0.3);
-  max-width: 100%;
-}
+  
+  .vacation-container img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+    
+
   @media screen and (max-width: 600px) {
     ul.topnav li.right, 
-    ul.topnav li {float: none;
+    ul.topnav li {
+      float: none;
     }
 
   /*/*  smaller img to improve page load speed on mobile internet connections **/
   body{
-    background-image: url("../image/clouds-mobile.jpg")
+    background-image: url("../image/clouds-mobile.jpg");
   }
-  }
+
   p{
     font-size: 10pt;
   }
-  grid { 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr ));
-    grid-gap: 10px;
-    padding-top: 2rem;
-    align-items: stretch;
-    }
-  .grid img {
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px  rgba(0,0,0,0.3);
+  .vacation-container {
+    flex: 100%;
     max-width: 100%;
   }
+}
